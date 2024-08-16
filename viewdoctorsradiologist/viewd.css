@@ -1,0 +1,160 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.background {
+    background-image: url('radiology.png');
+    background-color: rgba(0, 0, 0, 0.5); /* Matte color with opacity */
+    background-blend-mode: overlay; /* Apply overlay effect */
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex; /* Added */
+    justify-content: center; /* Added */
+    align-items: center; /* Added */
+}
+
+.doctor {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px;
+    max-width: 1000px;
+    background-color: #fff; /* Background color for doctor info box */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.4s ease-in-out;
+}
+
+.doctor:hover {
+    transform: scale(1.1);
+}
+
+.left {
+    flex: 1 1 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left img {
+    max-width: 100%;
+    border-radius: 8px;
+    transition: transform 0.4s ease-in-out, filter 0.4s ease-in-out;
+}
+
+.left img:hover {
+    transform: scale(1.2);
+    filter: brightness(1.3);
+}
+
+.right {
+    flex: 1 1 100%;
+    padding: 10px;
+    transition: color 0.4s ease-in-out;
+}
+
+.right:hover {
+    color: #007bff;
+}
+
+h2 {
+    margin-top: 0;
+    color: #333;
+    transition: color 0.4s ease-in-out;
+}
+
+h2:hover {
+    color: #007bff;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+    color: #555;
+    transition: color 0.4s ease-in-out;
+}
+
+ul li:hover {
+    color: #007bff;
+}
+
+h5 {
+    margin-top: 20px;
+    color: #333;
+}
+
+.social-links {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 70px;
+}
+
+.social-links a {
+    color: #555;
+    text-decoration: none;
+    transition: color 0.4s ease-in-out;
+}
+
+.social-links a:hover {
+    color: #007bff;
+}
+
+.social-links i {
+    font-size: 18px;
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+.book-appointment-button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.4s ease-in-out, transform 0.4s ease-in-out;
+}
+
+.book-appointment-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+/* Media Query for Responsive Design */
+@media (min-width: 600px) {
+    .doctor {
+        flex-direction: row;
+    }
+
+    .left {
+        flex: 1;
+    }
+
+    .right {
+        flex: 2;
+    }
+}
+
+@media (max-width: 600px) {
+    .doctor {
+        flex-direction: column;
+    }
+
+    .left,
+    .right {
+        flex: 1 1 100%;
+    }
+}

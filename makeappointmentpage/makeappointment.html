@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Appointment</title>
+  <link rel="stylesheet" href="makeappointment.css">
+</head>
+<body>
+  <div class="background">
+    <div class="overlay">
+      <h1 class="main-heading">Book Appointment</h1>
+      <p class="sub-heading">Now you can get an online appointment. We will get back to you and fix a meeting with doctors.</p>
+    </div>
+  </div>
+  <div class="form-container">
+    <div class="form-background">
+      <h2 class="form-heading">Make an Appointment</h2>
+      <form id="appointmentForm">
+        <div class="form-group">
+          <label for="department">Choose Department:</label>
+          <select id="department" name="department">
+            <option value="" disabled selected>Select Department</option>
+            <option value="cardiology">Cardiology</option>
+            <option value="orthopedic">Orthopedic</option>
+            <option value="dermatologist">Dermatologist</option>
+            <option value="ent-specialist">ENT Specialist</option>
+            <option value="general-surgeon">General Surgeon</option>
+            <option value="pediatrics">Pediatrics</option>
+          </select>
+          <div class="arrow"></div>
+        </div>
+        <!-- <div class="form-group">
+          <label for="doctor">Choose Doctor:</label>
+          <select id="doctor" name="doctor">
+            <option value="" disabled selected>Select Doctor</option>
+          </select>
+          <div class="arrow"></div>
+        </div> -->
+        <div class="form-group">
+          <label for="date">Date:</label>
+          <input type="text" id="date" name="date" placeholder="Select Date (dd/mm/yyyy)">
+        </div>
+        <div class="form-group">
+          <label for="time">Time:</label>
+          <input type="text" id="time" name="time" placeholder="Select Time">
+        </div>
+        <div class="form-group">
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" placeholder="Full Name">
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" placeholder="Phone Number">
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Email">
+        </div>
+        <div class="form-group">
+          <label for="message">Your Message:</label>
+          <textarea id="message" name="message" placeholder="Your Message"></textarea>
+        </div>
+        <button type="submit" id="makeAppointmentBtn">Make Appointment</button>
+      </form>
+    </div>
+  </div>
+  <script src="makeappointment.js"></script>
+</body>
+</html>
+

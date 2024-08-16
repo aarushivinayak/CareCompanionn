@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body, html {
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .container {
+    display: flex;
+    height: 100%;
+  }
+  
+  .left-side, .right-side {
+    flex: 1;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  
+  .left-side {
+    background-image: url('leftimgfinal.png'); /* Replace 'leftimgfinal.png' with your image path */
+  }
+  
+  .right-side {
+    background-image: url('rightimg.png'); /* Replace 'rightimg.png' with your image path */
+  }
+  
+  .cross-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #230e0e;
+    font-size: 60px; /* Adjust the font-size as needed */
+    text-decoration: none;
+    z-index: 999;
+  }
+  
+  .video-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    overflow: hidden;
+  }
+  
+  video {
+    width: 100%;
+    height: auto;
+    border: 11px solid #230e0e; /* Border around the video */
+    border-radius: 10px; /* Rounded corners for the video */
+    transition: opacity 0.5s; /* Smooth transition for opacity */
+  }
+  
+  .video-container:hover video {
+    opacity: 0.8; /* Reduce opacity when not hovered */
+  }
+  
+  .controls {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0; /* Hide controls by default */
+    transition: opacity 0.5s; /* Smooth transition for opacity */
+  }
+  
+  .video-container:hover .controls {
+    opacity: 1; /* Show controls when video container is hovered */
+  }
+  
+  #playpause, #mute {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+    padding: 5px 10px;
+    color: #230e0e;
+  }
+  
+  #seek {
+    width: 300px; /* Adjusted width of the seek bar */
+  }
+  
+  

@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Page</title>
+<link rel="stylesheet" href="videopage.css">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+<div class="container">
+  <div class="left-side"></div>
+  <div class="right-side"></div>
+</div>
+
+<a class="cross-icon" href="../CareCompanion/index.html"><i class='bx bx-x'></i></a>
+
+<div class="video-container" id="video-container">
+  <video id="video" autoplay loop>
+    <source src="editss.mp4" type="video/mp4"> <!-- Replace 'editss.mp4' with your video path -->
+    Your browser does not support the video tag.
+  </video>
+  <div class="controls">
+    <button id="playpause"><i class='bx bx-play'></i></button>
+    <input id="seek" type="range" min="0" max="100" value="0" step="0.1">
+    <button id="mute"><i class='bx bxs-volume-mute' ></i></button>
+  </div>
+</div>
+
+<script src="videopage.js"></script>
+</body>
+</html>
+

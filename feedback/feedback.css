@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --yellow: #FFBD13;
+    --blue: #A79277;
+    --blue-d-1: #3278FF;
+    --light: #F5F5F5;
+    --grey: #AAA;
+    --white: #FFF;
+    --shadow: 8px 8px 30px rgba(0,0,0,.05);
+}
+
+body {
+    background: var(--light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 4rem;
+	background-color: #A79277;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --yellow: #FFBD13;
+    --blue: #A79277;
+    --blue-d-1: #3278FF;
+    --light: #F5F5F5;
+    --grey: #AAA;
+    --white: #FFF;
+    --shadow: 8px 8px 30px rgba(0,0,0,.05);
+}
+
+body {
+    background: var(--light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+.wrapper {
+    background: var(--white);
+    padding: 4rem; /* Increased padding */
+    max-width: 700px; /* Increased max-width */
+    width: 100%;
+    border-radius: .75rem;
+    box-shadow: var(--shadow);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added transition */
+}
+.wrapper:hover {
+    transform: translateY(-10px); /* Lift up effect */
+    box-shadow: 8px 8px 50px rgba(0,0,0,.1); /* Enhanced shadow */
+}
+.wrapper h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    transition: color 0.3s ease; /* Added transition for color */
+}
+.wrapper h3:hover {
+    color: var(--blue); /* Change color on hover */
+}
+.rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: .5rem;
+    font-size: 2rem;
+    color: var(--yellow);
+    margin-bottom: 2rem;
+    transition: color 0.3s ease; /* Added transition for color */
+}
+.rating .star {
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Added transition for transform */
+}
+.rating .star.active {
+    opacity: 0;
+    animation: animate .5s calc(var(--i) * .1s) ease-in-out forwards;
+}
+.rating .star:hover {
+    transform: scale(1.2); /* Increased scale on hover */
+}
+textarea {
+    width: 100%;
+    background: var(--light);
+    padding: 1rem;
+    border-radius: .5rem;
+    border: none;
+    outline: none;
+    resize: none;
+    margin-bottom: .5rem;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Added transitions */
+}
+textarea:hover {
+    background-color: var(--white);
+    transform: scale(1.02); /* Slight enlarge effect */
+}
+.btn-group {
+    display: flex;
+    grid-gap: .5rem;
+    align-items: center;
+}
+.btn-group .btn {
+    padding: .75rem 1rem;
+    border-radius: .5rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: .875rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Added transitions */
+}
+.btn-group .btn.submit {
+    background: var(--blue);
+    color: var(--white);
+}
+.btn-group .btn.submit:hover {
+    background: var(--yellow);
+    transform: translateY(-3px); /* Lift up effect */
+}
+.btn-group .btn.cancel {
+    background: var(--white);
+    color: var(--blue);
+}
+.btn-group .btn.cancel:hover {
+    background: var(--light);
+    transform: translateY(-3px); /* Lift up effect */
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+;
+}
+
+.wrapper {
+    background: var(--white);
+    padding: 4rem; /* Increased padding */
+    max-width: 700px; /* Increased max-width */
+    width: 100%;
+    border-radius: .75rem;
+    box-shadow: var(--shadow);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added transition */
+}
+.wrapper:hover {
+    transform: translateY(-10px); /* Lift up effect */
+    box-shadow: 8px 8px 50px rgba(0,0,0,.1); /* Enhanced shadow */
+}
+.wrapper h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    transition: color 0.3s ease; /* Added transition for color */
+}
+.wrapper h3:hover {
+    color: var(--blue); /* Change color on hover */
+}
+.rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: .5rem;
+    font-size: 2rem;
+    color: var(--yellow);
+    margin-bottom: 2rem;
+    transition: color 0.3s ease; /* Added transition for color */
+}
+.rating .star {
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Added transition for transform */
+}
+.rating .star.active {
+    opacity: 0;
+    animation: animate .5s calc(var(--i) * .1s) ease-in-out forwards;
+}
+.rating .star:hover {
+    transform: scale(1.2); /* Increased scale on hover */
+}
+textarea {
+    width: 100%;
+    background: var(--light);
+    padding: 1rem;
+    border-radius: .5rem;
+    border: none;
+    outline: none;
+    resize: none;
+    margin-bottom: .5rem;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Added transitions */
+}
+textarea:hover {
+    background-color: var(--white);
+    transform: scale(1.05); /* Slight enlarge effect */
+}
+.btn-group {
+    display: flex;
+    grid-gap: .5rem;
+    align-items: center;
+}
+.btn-group .btn {
+    padding: .75rem 1rem;
+    border-radius: .5rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: .875rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Added transitions */
+}
+.btn-group .btn.submit {
+    background: var(--blue);
+    color: var(--white);
+}
+.btn-group .btn.submit:hover {
+    background: var(--yellow);
+    transform: translateY(-3px); /* Lift up effect */
+}
+.btn-group .btn.cancel {
+    background: var(--white);
+    color: var(--blue);
+}
+.btn-group .btn.cancel:hover {
+    background: var(--light);
+    transform: translateY(-3px); /* Lift up effect */
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
